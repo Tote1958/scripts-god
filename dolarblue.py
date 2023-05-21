@@ -17,7 +17,7 @@ try:
 except ImportError:
     os.fork()
     if os.fork() == 0:
-        os.system("pip install beautifulsoap4")
+        os.system("pip install bs4")
         exit()
     else:
         os.wait()
